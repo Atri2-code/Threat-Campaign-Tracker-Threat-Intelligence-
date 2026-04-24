@@ -1,0 +1,86 @@
+[
+  {
+    "id": "ART-001", "type": "email", "source": "inbox_sweep",
+    "timestamp": "2025-04-01T08:12:00Z",
+    "iocs": {
+      "domains": ["paypa1-verify.xyz", "cdn-paypa1.net"],
+      "urls": ["http://paypa1-verify.xyz/login", "http://cdn-paypa1.net/track?id=441"],
+      "ips": ["185.220.101.45"],
+      "hashes": [],
+      "emails": ["security@paypa1-verify.xyz"]
+    },
+    "tags": ["credential-harvest", "paypal-lure"]
+  },
+  {
+    "id": "ART-002", "type": "url", "source": "proxy_logs",
+    "timestamp": "2025-04-01T09:44:00Z",
+    "iocs": {
+      "domains": ["paypa1-verify.xyz", "secure-paypa1.ru"],
+      "urls": ["http://paypa1-verify.xyz/reset", "http://secure-paypa1.ru/index.php"],
+      "ips": ["185.220.101.45", "91.108.4.12"],
+      "hashes": [],
+      "emails": []
+    },
+    "tags": ["credential-harvest", "paypal-lure"]
+  },
+  {
+    "id": "ART-003", "type": "file", "source": "endpoint_alert",
+    "timestamp": "2025-04-02T14:03:00Z",
+    "iocs": {
+      "domains": ["cdn-paypa1.net"],
+      "urls": [],
+      "ips": ["185.220.101.45"],
+      "hashes": ["d41d8cd98f00b204e9800998ecf8427e", "098f6bcd4621d373cade4e832627b4f6"],
+      "emails": []
+    },
+    "tags": ["dropper", "paypal-lure"]
+  },
+  {
+    "id": "ART-004", "type": "email", "source": "inbox_sweep",
+    "timestamp": "2025-04-03T07:55:00Z",
+    "iocs": {
+      "domains": ["m1crosoft-login.tk", "office365-reset.pw"],
+      "urls": ["http://m1crosoft-login.tk/auth", "http://office365-reset.pw/verify"],
+      "ips": ["194.165.16.77"],
+      "hashes": [],
+      "emails": ["helpdesk@m1crosoft-login.tk"]
+    },
+    "tags": ["credential-harvest", "microsoft-lure"]
+  },
+  {
+    "id": "ART-005", "type": "url", "source": "threat_feed",
+    "timestamp": "2025-04-03T11:20:00Z",
+    "iocs": {
+      "domains": ["office365-reset.pw", "microsft-support.ga"],
+      "urls": ["http://office365-reset.pw/index", "http://microsft-support.ga/login"],
+      "ips": ["194.165.16.77", "45.142.212.100"],
+      "hashes": [],
+      "emails": []
+    },
+    "tags": ["credential-harvest", "microsoft-lure"]
+  },
+  {
+    "id": "ART-006", "type": "file", "source": "sandbox",
+    "timestamp": "2025-04-04T16:30:00Z",
+    "iocs": {
+      "domains": ["microsft-support.ga"],
+      "urls": [],
+      "ips": ["45.142.212.100"],
+      "hashes": ["5d41402abc4b2a76b9719d911017c592", "098f6bcd4621d373cade4e832627b4f6"],
+      "emails": []
+    },
+    "tags": ["ransomware", "microsoft-lure"]
+  },
+  {
+    "id": "ART-007", "type": "email", "source": "inbox_sweep",
+    "timestamp": "2025-04-05T06:10:00Z",
+    "iocs": {
+      "domains": ["amaz0n-order.club", "amaz0n-billing.xyz"],
+      "urls": ["http://amaz0n-order.club/track", "http://amaz0n-billing.xyz/pay"],
+      "ips": ["176.123.6.88"],
+      "hashes": [],
+      "emails": ["noreply@amaz0n-order.club"]
+    },
+    "tags": ["credential-harvest", "amazon-lure"]
+  }
+]
